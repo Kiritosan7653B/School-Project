@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Page with Full Page Header</title>
+    <style>
+        /* Style for full-page header */
+        header {
+            background-color: #616161;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensure the header appears above other content */
+        }
+
+        /* Style for main content */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        button{
+            width: 300px;
+            height: 250px;
+            font-size: 50px;
+            background-color: #383e47;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color linear 200ms;
+        }
+        button:hover{
+            background-color: #808ea0;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Full-page header -->
+    <header>
+        <h1>Google Maps Tutorial😊</h1>
+    </header>
+
+    <main>
+        <div><a href="index"><Button>Begin Your Course</Button></a></div>
+    </main>
+</body>
+</html>

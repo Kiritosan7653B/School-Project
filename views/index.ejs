@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Page with Full Page Header</title>
+    <style>
+        /* Style for full-page header */
+        header {
+            background-color: #616161;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            width: 99%;
+            top: 0;
+            z-index: 1000; /* Ensure the header appears above other content */
+        }
+
+        /* Style for main content */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 1000px;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                height: 1500px; /* Adjust the body height for phones */
+            }
+        }
+        @media only screen and (max-width: 420px) {
+            body {
+                height: 2000px; /* Adjust the body height for small devices */
+            }
+        }
+        @media only screen and (max-width: 200px) {
+            body {
+                height: 2500px; /* Adjust the body height for small devices */
+            }
+        }
+
+        /* Style for section */
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position:fixed;
+            bottom: 0;
+            width: 99%;
+        }
+        .mode{
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Full-page header -->
+    <header>
+        <h1>Google Maps Tutorial😊</h1>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Sections with content -->
+        <section>
+            <h2>Basic Navigation</h2>
+            <ol>
+                <b>
+                    <li>Open the Google Maps app.</li>
+                </b>
+                <b>
+                    <li>Click on the search bar and enter where you want to go.</li>
+                </b>
+                <b>
+                    <li>Then choose your mode of transportation for the best route.</li>
+                </b>
+                <b>
+                    <li>Tap the "Start" button to begin navigation.</li>
+                </b>
+                <b>
+                    <li>Follow the directions shown on the screen.</li>
+                </b>
+                <b>
+                    <li>Continue following directions until you reach your destination.</li>
+                </b>
+                <b>
+                    <li>Tap the "❌" button to end navigation.</li>
+                </b>
+            </ol>
+        </section>
+        <section>
+            <h2>Modes of Map</h2>
+            <ol>
+                <b>
+                    <li><span class="mode">Driving Mode</span>: Provides directions for driving between locations, including estimated travel time and distance.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Walking Mode</span>: Offers directions optimized for pedestrians, including sidewalks and pedestrian pathways.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Bicycling Mode</span>: Provides bike-friendly routes, highlighting bike lanes, paths, and trails.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Transit Mode</span>: Offers public transit directions, including bus, train, subway, and other modes of public transportation.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Satellite View</span>: Displays satellite imagery of the Earth's surface, providing detailed views of landscapes, cities, and landmarks.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Terrain View</span>: Shows elevation and terrain features, such as mountains, valleys, and bodies of water, on the map.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Street View</span>: Allows users to explore panoramic street-level imagery, providing a virtual tour of streets and neighborhoods.</li>
+                </b>
+                <b>
+                    <li><span class="mode">Live Traffic Mode</span>: Displays real-time traffic conditions, including congestion, accidents, and construction, to help users plan their routes.</li>
+                </b>
+            </ol>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
